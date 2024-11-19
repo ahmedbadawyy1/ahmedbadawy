@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ahmed Badawy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> Ahmed Badawy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/MYPHOTO-modified.png" alt="Ahmed Badawy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ahmed Badawy</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Ahmed_Badawy_ATS_CV_Fixed.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ahmed-badaw'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ahmedbadawyy1'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/IMG_9825.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. in Information Technology, Menoufia University<br />Graduated: 2023, GPA: 3.03/4</p>
+              </div>
+              </div>
+              <div class="text-container">
+              <p>
+                Ahmed Badawy is a recent graduate with a strong foundation in software engineering principles. His academic work focused on developing innovative software solutions using frameworks like Django and Java Spring Boot, as well as mobile app development with Flutter. He completed a rigorous curriculum that equipped him with skills in database management, backend API development, and mobile app design. Ahmed is passionate about continuous learning and staying up to date with the latest technologies.
+              </p>              
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+ 
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Spring Boot</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <p class="highlight-text">Explore My Work</p>
+        <h1 class="main-title">Projects</h1>
+      </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <h2 class="project-title">Kiosk Web App</h2>
+          <p class="project-description">
+            Developed a Kiosk Web App for a court system to assist visitors in finding directions between courtrooms. Users can 
+            search for specific rooms and get precise directions. The backend was implemented using Node.js to ensure efficient 
+            data handling, and the frontend was built with React to provide a seamless and responsive user experience.
+          </p>
+          <div class="links-container">
+            <a href="https://github.com/ahmedbadawyy1/kiosk-web-app" class="btn btn-primary">GitHub</a>
+            <a href="https://live-demo-link.com" class="btn btn-secondary">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Graduation Project</h2>
+          <p class="project-description">
+            Developed a mobile app that includes an Admin App to manage schedules and attendance using camera-based ML APIs, 
+            and a Doctor App to track attendance with an intuitive interface. Built a complete solution for university management.
+          </p>
+          <div class="links-container">
+            <a href="https://github.com/ahmedbadawyy1/graduation-project" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Project Management System</h2>
+          <p class="project-description">
+            Designed and implemented a Django-based management system with CRUD operations for department, project, employee, 
+            task, and expense management. Integrated custom actions for seamless data management and workflows.
+          </p>
+          <div class="links-container">
+            <a href="https://github.com/ahmedbadawyy1/CompanyManagementSystem" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Student Management System</h2>
+          <p class="project-description">
+            Built a backend using Java Spring Boot for student data management. Implemented RESTful APIs and utilized Hibernate 
+            for efficient and reliable data handling.
+          </p>
+          <div class="links-container">
+            <a href="https://github.com/ahmedbadawyy1/student-management-system" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">School Management System</h2>
+          <p class="project-description">
+            Developed comprehensive RESTful APIs with Java Spring Boot, supporting extensive school data management 
+            while ensuring database consistency using Hibernate.
+          </p>
+          <div class="links-container">
+            <a href="https://github.com/ahmedbadawyy1/SchoolAPIs" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="ahmedbadwee2@gmail.com">ahmedbadwee2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ahmed-badaw">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ahmed Badawy. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
